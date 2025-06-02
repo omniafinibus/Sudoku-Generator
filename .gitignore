@@ -7,6 +7,8 @@ __pycache__/
 *.so
 
 # Distribution / packaging
+generated_books/
+succesfull_pdfs/
 .Python
 build/
 develop-eggs/
