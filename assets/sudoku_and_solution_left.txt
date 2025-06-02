@@ -1,0 +1,47 @@
+
+  \thisfloatsetup{heightadjust=all,valign=l}
+  \begin{figure}
+    \begin{subfloatrow}
+      \ffigbox[\dimexpr\FBwidth\hspace{-0.48cm}\relax]
+        {\begin{tikzpicture}[scale=0.5]
+          \begin{scope}[anchor=east]
+            \draw[thin] (0, 0) grid (9, 9);
+            \draw[very thick, scale=3, overlay] (0, 0) grid (3, 3);
+            
+            \node[anchor=center] at (4.5, 9.5) {\Large{Solution $S_SUDOKU_NUMBER$}};
+      
+            \setcounter{row}{1}
+            \setrowmedium {S11}{S12}{S13}  {S14}{S15}{S16}  {S17}{S18}{S19}
+            \setrowmedium {S21}{S22}{S23}  {S24}{S25}{S26}  {S27}{S28}{S29}
+            \setrowmedium {S31}{S32}{S33}  {S34}{S35}{S36}  {S37}{S38}{S39}
+            \setrowmedium {S41}{S42}{S43}  {S44}{S45}{S46}  {S47}{S48}{S49}
+            \setrowmedium {S51}{S52}{S53}  {S54}{S55}{S56}  {S57}{S58}{S59}
+            \setrowmedium {S61}{S62}{S63}  {S64}{S65}{S66}  {S67}{S68}{S69}
+            \setrowmedium {S71}{S72}{S73}  {S74}{S75}{S76}  {S77}{S78}{S79}
+            \setrowmedium {S81}{S82}{S83}  {S84}{S85}{S86}  {S87}{S88}{S89}
+            \setrowmedium {S91}{S92}{S93}  {S94}{S95}{S96}  {S97}{S98}{S99}
+          \end{scope}
+        \end{tikzpicture}}{}%
+      \ffigbox[\FBwidth\hspace{0.5cm}]{}
+        {\begin{tikzpicture}[scale=0.6]
+          \begin{scope}[anchor=west]
+            \draw[thin] (0, 0) grid (9, 9);
+            \draw[very thick, scale=3, overlay] (0, 0) grid (3, 3);
+            
+            \node[anchor=center] at (4.5, 9.5) {\Large{Sudoku $V_SUDOKU_NUMBER$}};
+    
+            \setcounter{row}{1}
+            \setrowlarge {V11}{V12}{V13}  {V14}{V15}{V16}  {V17}{V18}{V19}
+            \setrowlarge {V21}{V22}{V23}  {V24}{V25}{V26}  {V27}{V28}{V29}
+            \setrowlarge {V31}{V32}{V33}  {V34}{V35}{V36}  {V37}{V38}{V39}
+            \setrowlarge {V41}{V42}{V43}  {V44}{V45}{V46}  {V47}{V48}{V49}
+            \setrowlarge {V51}{V52}{V53}  {V54}{V55}{V56}  {V57}{V58}{V59}
+            \setrowlarge {V61}{V62}{V63}  {V64}{V65}{V66}  {V67}{V68}{V69}
+            \setrowlarge {V71}{V72}{V73}  {V74}{V75}{V76}  {V77}{V78}{V79}
+            \setrowlarge {V81}{V82}{V83}  {V84}{V85}{V86}  {V87}{V88}{V89}
+            \setrowlarge {V91}{V92}{V93}  {V94}{V95}{V96}  {V97}{V98}{V99}
+          \end{scope}
+        \end{tikzpicture}
+      }
+    \end{subfloatrow}
+  \end{figure}

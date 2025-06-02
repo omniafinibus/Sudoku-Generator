@@ -1,0 +1,47 @@
+
+  \thisfloatsetup{heightadjust=all,valign=l}
+  \begin{figure}
+    \begin{subfloatrow}
+      \ffigbox[\dimexpr\FBwidth\hspace{0.073cm}\relax]
+        {\begin{tikzpicture}[scale=0.5]
+          \begin{scope}[anchor=west]
+            \draw[thin] (0, 0) grid (9, 9);
+            \draw[very thick, scale=3, overlay] (0, 0) grid (3, 3);
+            
+            \node[anchor=center] at (4.5, 9.5) {\Large{Solution $SL_SUDOKU_NUMBER$}};
+    
+            \setcounter{row}{1}
+            \setrowmedium {SL11}{SL12}{SL13}  {SL14}{SL15}{SL16}  {SL17}{SL18}{SL19}
+            \setrowmedium {SL21}{SL22}{SL23}  {SL24}{SL25}{SL26}  {SL27}{SL28}{SL29}
+            \setrowmedium {SL31}{SL32}{SL33}  {SL34}{SL35}{SL36}  {SL37}{SL38}{SL39}
+            \setrowmedium {SL41}{SL42}{SL43}  {SL44}{SL45}{SL46}  {SL47}{SL48}{SL49}
+            \setrowmedium {SL51}{SL52}{SL53}  {SL54}{SL55}{SL56}  {SL57}{SL58}{SL59}
+            \setrowmedium {SL61}{SL62}{SL63}  {SL64}{SL65}{SL66}  {SL67}{SL68}{SL69}
+            \setrowmedium {SL71}{SL72}{SL73}  {SL74}{SL75}{SL76}  {SL77}{SL78}{SL79}
+            \setrowmedium {SL81}{SL82}{SL83}  {SL84}{SL85}{SL86}  {SL87}{SL88}{SL89}
+            \setrowmedium {SL91}{SL92}{SL93}  {SL94}{SL95}{SL96}  {SL97}{SL98}{SL99}
+          \end{scope}
+        \end{tikzpicture}}{}%
+      \ffigbox[\FBwidth\hspace{0.5cm}]{}
+        {\begin{tikzpicture}[scale=0.5]
+          \begin{scope}[anchor=east]
+            \draw[thin] (0, 0) grid (9, 9);
+            \draw[very thick, scale=3, overlay] (0, 0) grid (3, 3);
+            
+            \node[anchor=center] at (4.5, 9.5) {\Large{Solution $SR_SUDOKU_NUMBER$}};
+      
+            \setcounter{row}{1}
+            \setrowmedium {SR11}{SR12}{SR13}  {SR14}{SR15}{SR16}  {SR17}{SR18}{SR19}
+            \setrowmedium {SR21}{SR22}{SR23}  {SR24}{SR25}{SR26}  {SR27}{SR28}{SR29}
+            \setrowmedium {SR31}{SR32}{SR33}  {SR34}{SR35}{SR36}  {SR37}{SR38}{SR39}
+            \setrowmedium {SR41}{SR42}{SR43}  {SR44}{SR45}{SR46}  {SR47}{SR48}{SR49}
+            \setrowmedium {SR51}{SR52}{SR53}  {SR54}{SR55}{SR56}  {SR57}{SR58}{SR59}
+            \setrowmedium {SR61}{SR62}{SR63}  {SR64}{SR65}{SR66}  {SR67}{SR68}{SR69}
+            \setrowmedium {SR71}{SR72}{SR73}  {SR74}{SR75}{SR76}  {SR77}{SR78}{SR79}
+            \setrowmedium {SR81}{SR82}{SR83}  {SR84}{SR85}{SR86}  {SR87}{SR88}{SR89}
+            \setrowmedium {SR91}{SR92}{SR93}  {SR94}{SR95}{SR96}  {SR97}{SR98}{SR99}
+          \end{scope}
+        \end{tikzpicture}
+      }
+    \end{subfloatrow}
+  \end{figure}

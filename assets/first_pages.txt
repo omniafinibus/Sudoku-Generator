@@ -1,0 +1,103 @@
+\documentclass{article}
+\usepackage[paperheight=22.86cm, paperwidth=15.24cm]{geometry}
+\usepackage{tikz}     % Used for drawing sudokus
+\usepackage{graphicx} % Used for drawing sudokus
+\usepackage{fancyhdr} % Positioning of page numbers
+\usepackage{xcolor}   % For text coloring
+\usepackage{layout}   % Used for margin definitions
+\usepackage{subcaption}
+\usepackage{floatrow}
+\usepackage{graphicx}
+
+\usepackage[T1]{fontenc}
+\usepackage{txfonts}
+
+\usepackage{arev}
+\usepackage{contour}
+\contourlength{2pt}
+
+% Some counters
+\newcounter{row}
+\newcounter{col}
+
+\definecolor{beginner_background}{HTML}{8AAAE5} % baby Blue
+\definecolor{beginner_text}{HTML}{FFFFFF} % white
+\definecolor{easy_background}{HTML}{2F3D7E} % Blue
+\definecolor{easy_text}{HTML}{EEA47F} % pink
+\definecolor{hard_background}{HTML}{990012} % Cherry red
+\definecolor{hard_text}{HTML}{FCF6F6} % off-white 
+\definecolor{expert_background}{HTML}{FABD2F} % Gold
+\definecolor{expert_text}{HTML}{FCF6F6} % White
+
+\fancypagestyle{sudokus_left}{%
+\fancyhf{} %clear all headers and footers fields
+\fancyfoot[L]{\hspace*{15pt}\thepage} %prints the page number on the right side of the header
+}
+
+\fancypagestyle{sudokus_right}{%
+\fancyhf{} %clear all headers and footers fields
+\fancyfoot[R]{\thepage\hspace*{15pt}} %prints the page number on the right side of the header
+}
+
+% Function used to enter sudoku values for large sudoku
+\newcommand\setrowlarge[9]{
+  \setcounter{col}{1}
+  \foreach\n in {#1, #2, #3, #4, #5, #6, #7, #8, #9} {
+    \edef\x{\value{col} - 0.5}
+    \edef\y{9.5 - \value{row}}
+    \node[anchor=center] at (\x, \y) {\Large{\n}};
+    \stepcounter{col}
+  }
+  \stepcounter{row}
+}
+
+% Function used to enter sudoku values for small sudoku
+\newcommand\setrowmedium[9]{
+  \setcounter{col}{1}
+  \foreach\n in {#1, #2, #3, #4, #5, #6, #7, #8, #9} {
+    \edef\x{\value{col} - 0.5}
+    \edef\y{9.5 - \value{row}}
+    \node[anchor=center] at (\x, \y) {\n};
+    \stepcounter{col}
+  }
+  \stepcounter{row}
+}
+
+\usepackage[contents={}]{background} % For page backgrounds
+\newcommand\BGfrom[1]{%
+\AddEverypageHook{%
+  \ifnum\value{page}>\numexpr#1-1\relax
+    \centering{\begin{tikzpicture}[overlay]
+      \node[opacity=0.4] (background_image) at (5.05cm, -8.9cm)  {\includegraphics[width=\paperwidth,height=\paperheight]{../images/white_marble_background.jpeg}};
+    \end{tikzpicture}}
+  \fi
+  \BgMaterial%
+  }%
+}
+\BGfrom{1}
+
+\begin{document}
+  \newpage
+  \pagestyle{empty} %%in order to delete the number at the bottom of the page
+  \addtocounter{page}{-1}
+  \vspace*{\fill}
+  \raggedright{
+    Copyright © 2023 by Omnia Finit\\
+    All rights reserved.\\
+    No part of this book may be reproduced in any form on by an electronic or mechanical means, including information storage and retrieval systems, without permission in writing from the publisher, except as permitted by U.S. copyright law.\par
+    \vspace{20pt}
+    ISBN ENTER ISBN HERE\par
+    \vspace{20pt}
+    First edition: December 2023}
+  \newpage
+  \pagestyle{plain}
+
+  \section*{The History of Sudoku}
+
+  \hspace{0.5cm}Sudoku is a number puzzle game that originated in Switzerland, but its roots can be traced back to an earlier puzzle called "Number Place". The credit for the modern Sudoku puzzle as we know it today goes to Howard Garns, an American architect and freelance puzzle constructor. Garns created the puzzle in 1979 and it was first published by Dell Magazines under the name "Number Place".\par
+
+  \hspace{0.5cm}The puzzle gained popularity in Japan in the 1980s when it was introduced by puzzle company Nikoli. The name "Sudoku", a contraction of the Japanese words "su" (meaning number) and "doku" (meaning single), was later adopted as the official name for the puzzle. Nikoli made some modifications to the puzzle, such as introducing the 3x3 grid subdivisions and a unique grading system based on the logical complexity of the puzzles.\par
+
+  \hspace{0.5cm}Sudoku's international popularity soared in the early 2000s when it started appearing in various newspapers and puzzle books worldwide. The game's simple rules and addictive nature contributed to its widespread appeal. Sudoku has since become a ubiquitous puzzle enjoyed by people of all ages around the globe.\par
+
+  \hspace{0.5cm}While Howard Garns is credited with creating the modern Sudoku puzzle, it's essential to recognize the contributions of Nikoli and the puzzle community in Japan for popularizing and refining the game into the widely recognized format we know today.

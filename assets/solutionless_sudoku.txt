@@ -1,0 +1,49 @@
+
+  \thisfloatsetup{heightadjust=all,valign=l}
+  \begin{figure}
+    \begin{subfloatrow}
+      \ffigbox[\dimexpr\FBwidth\hspace{-0.35cm}\relax]
+        {\begin{tikzpicture}[scale=0.6]
+          \begin{scope}[anchor=east]
+            \draw[thin] (0, 0) grid (9, 9);
+            \draw[very thick, scale=3, overlay] (0, 0) grid (3, 3);
+            
+            \node[anchor=center] at (4.5, 9.5) {\Large{Sudoku $VL_SUDOKU_NUMBER$}};
+      
+            \setcounter{row}{1}
+            \setrowlarge {VL11}{VL12}{VL13}  {VL14}{VL15}{VL16}  {VL17}{VL18}{VL19}
+            \setrowlarge {VL21}{VL22}{VL23}  {VL24}{VL25}{VL26}  {VL27}{VL28}{VL29}
+            \setrowlarge {VL31}{VL32}{VL33}  {VL34}{VL35}{VL36}  {VL37}{VL38}{VL39}
+            \setrowlarge {VL41}{VL42}{VL43}  {VL44}{VL45}{VL46}  {VL47}{VL48}{VL49}
+            \setrowlarge {VL51}{VL52}{VL53}  {VL54}{VL55}{VL56}  {VL57}{VL58}{VL59}
+            \setrowlarge {VL61}{VL62}{VL63}  {VL64}{VL65}{VL66}  {VL67}{VL68}{VL69}
+            \setrowlarge {VL71}{VL72}{VL73}  {VL74}{VL75}{VL76}  {VL77}{VL78}{VL79}
+            \setrowlarge {VL81}{VL82}{VL83}  {VL84}{VL85}{VL86}  {VL87}{VL88}{VL89}
+            \setrowlarge {VL91}{VL92}{VL93}  {VL94}{VL95}{VL96}  {VL97}{VL98}{VL99}
+          \end{scope}
+        \end{tikzpicture}}{}%
+      \ffigbox[\FBwidth\hspace{0.4cm}]{}
+        {\begin{tikzpicture}[scale=0.6]
+          \begin{scope}[anchor=west]
+            \draw[thin] (0, 0) grid (9, 9);
+            \draw[very thick, scale=3, overlay] (0, 0) grid (3, 3);
+            
+            \node[anchor=center] at (4.5, 9.5) {\Large{Sudoku $VR_SUDOKU_NUMBER$}};
+    
+            \setcounter{row}{1}
+            \setrowlarge {VR11}{VR12}{VR13}  {VR14}{VR15}{VR16}  {VR17}{VR18}{VR19}
+            \setrowlarge {VR21}{VR22}{VR23}  {VR24}{VR25}{VR26}  {VR27}{VR28}{VR29}
+            \setrowlarge {VR31}{VR32}{VR33}  {VR34}{VR35}{VR36}  {VR37}{VR38}{VR39}
+            \setrowlarge {VR41}{VR42}{VR43}  {VR44}{VR45}{VR46}  {VR47}{VR48}{VR49}
+            \setrowlarge {VR51}{VR52}{VR53}  {VR54}{VR55}{VR56}  {VR57}{VR58}{VR59}
+            \setrowlarge {VR61}{VR62}{VR63}  {VR64}{VR65}{VR66}  {VR67}{VR68}{VR69}
+            \setrowlarge {VR71}{VR72}{VR73}  {VR74}{VR75}{VR76}  {VR77}{VR78}{VR79}
+            \setrowlarge {VR81}{VR82}{VR83}  {VR84}{VR85}{VR86}  {VR87}{VR88}{VR89}
+            \setrowlarge {VR91}{VR92}{VR93}  {VR94}{VR95}{VR96}  {VR97}{VR98}{VR99}
+          \end{scope}
+        \end{tikzpicture}
+      }
+    \end{subfloatrow}
+  \end{figure}
+
+  
